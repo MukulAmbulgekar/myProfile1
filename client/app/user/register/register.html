@@ -1,0 +1,17 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+<div class="container">
+<h1 class='text-center'> Sign Up </h1>
+<form name='signup' ng-controller="RegisterCtrl" class="my-form">
+<div ng-repeat='field in signUpForm'>
+  <div class="form-group">
+    <label >{{field.label}}</label>
+    <input type="{{field.type}}" class="form-control" name="{{field.id}}" id="{{field.id}}" placeholder="{{field.label}}" ng-model="field.value"required>
+  </div>
+</div>
+<div class="text-center"> 
+  <button type="submit" class="btn btn-primary" class="text-center" ng-click='submit()' ng-disabled='signup.$invalid' >Submit</button>
+  <button type="submit" class="btn btn-primary" class="text-center" ng-click='clear()'>Clear</button>
+  </div>
+</form>
+</div>
+     <div ng-include="'components/navbar/footer.html'"></div>
