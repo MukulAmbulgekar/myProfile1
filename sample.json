@@ -1,0 +1,65 @@
+{
+	"first name": "Mukul",
+	"last name": "Ambulgekar",
+	"username": "mukul30",
+	"email": "mukulambulgekar@gmail.com",
+	"personalInformation": {
+		"first name": "Mukul",
+		"last name": "Ambulgekar",
+		"username": "mukul30",
+		"email": "mukulambulgekar@gmail.com",
+		"secEmail": "ambulgekarmukul@gmail.com",
+		"contact": "408-831-8492",
+		"linkedinurl": "https://www.linkedin.com/in/mukulambulgekar",
+		"giturl": "https://github.com/MukulAmbulgekar",
+		"twitterurl": "https://twitter.com/mukul3005",
+		"address": "1314 The Alameda, Apt #230",
+		"city": "San Jose, CA, 95126"
+	},
+	"education": {
+		"graduate": {
+			"schoolName": "San Jose State University",
+			"degree": "Master's",
+			"from": "2014-08-25T07:00:00.000Z",
+			"grades": 4,
+			"to": "1970-01-01T00:00:00.000Z"
+		},
+		"undergraduate": {
+			"schoolName": "PICT Pune",
+			"degree": "Bachelor's",
+			"from": "2006-07-01T07:00:00.000Z",
+			"to": "2010-08-31T07:00:00.000Z",
+			"grades": 3
+		}
+	},
+	"experience": {
+		"first": {
+			"companyName": "MarkLogic Corporation",
+			"position": "Software Engineering Intern",
+			"from": "2015-06-01T07:00:00.000Z"
+		},
+		"second": {
+			"companyName": "Atos India Pvt. Ltd",
+			"position": "Software Engineer Intern",
+			"from": "2010-09-13T07:00:00.000Z",
+			"to": "2014-07-14T07:00:00.000Z"
+		}
+	},
+	"certification": {
+		"first": {
+			"certificationName": "M101JS: MongoDB for Node.js Developers",
+			"authroity": "MongoDB, Inc.",
+			"from": "2015-04-12T07:00:00.000Z",
+			"url": "https://university.mongodb.com/course_completion/54fbc54397ce4b66a1f8978a3a58eb2b"
+		},
+		"second": {
+			"certificationName": "Web Application Architectures",
+			"authroity": "Coursera",
+			"url": "https://www.dropbox.com/s/u5i1d935l7rt9ev/Coursera%20webapplications%202015.pdf?dl=0",
+			"from": "2015-03-31T07:00:00.000Z",
+			"to": "2015-05-31T07:00:00.000Z"
+		}
+	},
+	"password": "mukul",
+	"re-enter password": "mukul"
+}

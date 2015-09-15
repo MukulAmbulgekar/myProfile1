@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('myprofileApp')
-	.controller('RegisterCtrl', function($scope, $http,$location,$window	) {
+	.controller('RegisterCtrl', function($scope, $http, $location, $window) {
 
 		$scope.message = 'Hello';
 		var user = {};
@@ -43,13 +43,13 @@ angular.module('myprofileApp')
 					user[field.label.toLowerCase()] = field.value
 				})
 				//loginService.creeateUser(user);
+
 			console.log('User', user);
 			$http.post('/api/users/createUser', {
 				data: user
 			}).success(function(response) {
 				console.log('Awesome success', response)
-				$window.localStorage.current=response.user;
-				$location.path('/home');
+				$location.path('/login');
 			}).error(function(error) {
 				console.log('failure', error)
 			});

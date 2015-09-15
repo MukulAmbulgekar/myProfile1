@@ -1,0 +1,87 @@
+<div class="content-container">
+	<h1 class='text-center'> Education </h1>
+	<div class="jumbotron container-fluid" style="width:1000px;background-color:#669999;height:600px" >
+		<form name='graduate' ng-controller="RegisterCtrl" class="my-form">
+
+			<div class="form-group" style="float:left;width:400px" >
+				<h3>Graduate School</h3>
+				<div class="ng-scope">
+					<label>School Name *</label>
+					<input type="text" class="form-control" name="schoolname" id="schoolname" placeholder="School Name" ng-model="userInfo.education['graduate'].schoolName" required>
+				</div>
+				<div>
+					<label >Degree</label>
+					<select name="degree" class="form-control" ng-model="userInfo.education['graduate'].degree">
+						<!-- not selected / blank option -->
+						<option value="Master's">Master's</option> <!-- interpolation -->
+						<option value="Bachelor's">Bachelor's</option>
+					</select>
+				</div>
+				<!-- <div>
+					<label >Degree</label>
+					<input type="text" class="form-control" name="degree" id="degree" placeholder="Degree" ng-model="userInfo.education['graduate'].degree" >
+				</div> -->
+				<div>
+					<label >Dates Attended</label>
+					<br>From
+					<input type="date" class="form-control" name="from" id="from"  ng-model="userInfo.education['graduate'].from" >
+					To
+					<input type="date" class="form-control" name="to" id="to"  ng-model="userInfo.education['graduate'].to" >
+				</div>
+				<div>
+					<label >Grades (optional)</label>
+					<input type="number" class="form-control" name="decemailid" id="decemailid" placeholder="Grades" ng-model="userInfo.education['graduate'].grades" >
+				</div>
+				<div>
+					<label >Activities</label>
+					<textarea class="form-control" name="activities" id="activities" placeholder="Activities" ng-model="userInfo.education['graduate'].activities" ></textarea>
+				</div>
+				<br>
+				<div class="text-center"> 
+					<button type="submit" style="background-color:#333300" class="btn btn-primary" class="text-center" ng-click='updateProfile()' ng-disabled='graduate.$invalid' >Update</button>
+				</div>
+			</div>
+		</form>
+		<form name='undergraduate' ng-controller="RegisterCtrl" class="my-form">
+			<div class="form-group" style="float:right;width:400px">
+				<h3>Under Graduate School</h3>
+				<div class="ng-scope">
+					<label>School Name *</label>
+					<input type="text" class="form-control" name="schoolname" id="schoolname" placeholder="School Name" ng-model="userInfo.education['undergraduate'].schoolName" required>
+				</div>
+				<div>
+					<label >Degree</label>
+					<select name="degree" class="form-control" ng-model="userInfo.education['undergraduate'].degree">
+						<!-- not selected / blank option -->
+						<option value="Master's">Master's</option> <!-- interpolation -->
+						<option value="Bachelor's">Bachelor's</option>
+					</select>
+				</div>
+				<!-- <div>
+					<label >Degree</label>
+					<input type="text" class="form-control" name="degree" id="degree" placeholder="Degree" ng-model="userInfo.education['undergraduate'].degree" >
+				</div> -->
+				<div>
+					<label >Dates Attended</label>
+					<br>From
+					<input type="date" class="form-control" name="from" id="from"  ng-model="userInfo.education['undergraduate'].from" >
+					To
+					<input type="date" class="form-control" name="to" id="to"  ng-model="userInfo.education['undergraduate'].to" >
+				</div>
+				<div>
+					<label >Grades (optional)</label>
+					<input type="number" class="form-control" name="decemailid" id="decemailid" placeholder="Grades" ng-model="userInfo.education['undergraduate'].grades" >
+				</div>
+				<div>
+					<label >Activities</label>
+					<textarea class="form-control" name="activities" id="activities" placeholder="Activities" ng-model="userInfo.education['undergraduate'].activities" ></textarea>
+				</div>
+				<br>
+				<div class="text-center"> 
+					<button type="submit" style="background-color:#333300" class="btn btn-primary" class="text-center" ng-click='updateProfile()' ng-disabled='undergraduate.$invalid' >Update</button>
+				</div>
+
+			</div>	
+		</form>
+	</div>
+</div>

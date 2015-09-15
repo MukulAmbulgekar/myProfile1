@@ -7,17 +7,32 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="/" class="navbar-brand">Mukul's Website</a>
+       <a href="/" class="navbar-brand" ng-show="currentUser.length===0"> Build Professional Website</a>
+      <a href="/" class="navbar-brand" ng-show="currentUser.length>0"> Welcome {{currentUser}}</a>
+      
     </div>
     <div collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
-    
       <ul class="nav navbar-nav navbar-right" >
         <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
-            <a ng-href="{{item.link}}"><span class="glyphicon glyphicon-user" ng-if="item.title==='Sign Up'"></span>
-            <span class="glyphicon glyphicon-log-in" ng-if="item.title==='Login'"></span>
-             {{item.title}}</a>
-        </li>
-      </ul>
+          <a ng-href="{{item.link}}"><span class="{{item.class}}">
+           {{item.title}}</a>
+         </li>
+         <li  ng-repeat="item in signin"ng-class="{active: isActive(item.link)}" ng-show="currentUser.length===0">
+          <a ng-href="{{item.link}}">
+            <span class="glyphicon glyphicon-log-in" ></span>
+            {{item.title}}</a>
+          </li>
+          <li class="dropdown " ng-show='currentUser.length>0'>
+            <a class="btn btn-link dropdown-toggle" role ="button" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>&nbsp;{{currentUser}}
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu .dropdown-menu-right">
+                <li  class='divider-vertical' ng-repeat="item in dropdownMenu">
+                  <a ng-href="{{item.link}}">{{item.title}}</a>
+                </li>
+                <li><a ng-click="logout()"> Logout</a> </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
