@@ -33,6 +33,7 @@ angular.module('myprofileApp')
 				currentUser=response.user;
 			}).error(function(response) {
 				console.log('Login failed',response.error);
+				alert(response.error);
 			})
 		}
 		$scope.logout= function(){

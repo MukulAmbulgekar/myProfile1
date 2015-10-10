@@ -96,6 +96,8 @@ exports.userInfo = function(req, res) {
 			if (response.length > 0) {
 				delete response[0].content['password'];
 				delete response[0].content['re-enter password'];
+				
+				//console.log('USersss',data)
 				return res.status(200).send({
 					//message:'success'
 					userInfo: response[0].content
@@ -110,30 +112,18 @@ exports.userInfo = function(req, res) {
 }
 
 exports.updateProfile = function(req, res) {
-	console.log('Request', req.body);
+	console.log('Request', req.body.data.type);
 	var uri = '/users/' + req.body.data.personalInformation.username + '.json';
 	var remove = [];
 	var insert = [];
+	var input={};
+	input[req.body.data.type]=req.body.data[req.body.data.type];
+	console.log('input',input);
 	//remove existing properties
-	remove.push(pb.remove('/personalInformation'));
-	remove.push(pb.remove('/education'));
-	remove.push(pb.remove('/experience'));
-	remove.push(pb.remove('/certification'));
+	remove.push(pb.remove('/'+req.body.data.type));
+
 	//insert
-	insert.push(pb.insert('/email', 'after', {
-		personalInformation: req.body.data.personalInformation
-	}));
-	insert.push(pb.insert('/email', 'after', {
-		education: req.body.data.education
-	}));
-	insert.push(pb.insert('/email', 'after', {
-		experience: req.body.data.experience
-	}));
-		insert.push(pb.insert('/email', 'after', {
-		certification: req.body.data.certification
-	}));
-
-
+	insert.push(pb.insert('/email', 'after',input));
 
 	db.documents.probe(uri).result(function(document) {
 		if (!document.exists) {
@@ -162,3 +152,4 @@ exports.updateProfile = function(req, res) {
 
 	})
 }
+

@@ -22,8 +22,8 @@ angular.module('myprofileApp')
         templateUrl: 'app/user/profile/profile.html',
         controller: 'ProfileCtrl',
         resolve: {
-          userInfo: ['$http', '$window',function( $http, $window) {
-            return  $http.get('/api/users/userInfo/' + $window.localStorage.loggedInUser)
+          userInfo: ['$http', '$window', function($http, $window) {
+            return $http.get('/api/users/userInfo/' + $window.localStorage.loggedInUser)
           }]
         }
       });

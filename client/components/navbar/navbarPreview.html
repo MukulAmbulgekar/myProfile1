@@ -1,0 +1,43 @@
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">            
+			<ul class="nav navbar-nav navbar-inverse navbar-right">
+            <li>
+            <a class="page-scroll" href="/buildprofile"> Go Back to builder </a>
+            </li>
+                    <li>
+                    	<a class="page-scroll" ng-click="/homepage"><span class="glyphicon glyphicon-home"></span> Home </a>
+                    </li>
+                    <li>
+                    	<a class="page-scroll" ng-href="/aboutme"><span class="glyphicon glyphicon-stats"></span> About Me</a>
+                    </li>
+                    <li>
+                    	<a class="page-scroll" href="/education"> <span class="glyphicon glyphicon-gift"></span> Education </a>
+                    </li>
+                    <li>
+                    	<a class="page-scroll" href="/experience"><span class="glyphicon glyphicon-globe"></span> Experience </a>
+                    </li>
+                    <li>
+                    	<a class="page-scroll" href="/projects"> <span class="glyphicon glyphicon-zoom-out"></span> Projects </a>
+                    </li>
+                    <li>
+                    	<a class="page-scroll" href="/skills"><span class="glyphicon glyphicon-link"></span> Skills </a>
+                    </li>
+                    <li>
+                    	<a class="page-scroll" href="/contactme"><span class="glyphicon glyphicon-usd"></span> Contact </a>
+                    </li>
+                </ul>
+
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+
+    <div ng-if="page==='aboutme'">
+        <div ng-include='/app/user/profile/partials/education.html'></div>
+
+    </div>

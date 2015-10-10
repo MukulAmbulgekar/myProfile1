@@ -4,24 +4,25 @@ angular.module('myprofileApp')
 	.controller('ProfileCtrl', function($scope, userInfo, $http) {
 		$scope.message = 'Hello';
 		$scope.userInfo = {};
+		$scope.exp = 0;
 		//$scope.userInfo=userInfo.data.userInfo;
 		var updatedUserInfo = {};
 		$scope.educationFields = [{
 			title: 'School Name',
 			type: 'text',
-			id:'schoolName'
+			id: 'schoolName'
 		}, {
 			title: 'Degree',
 			type: 'text',
-			id:'degree'
+			id: 'degree'
 		}, {
 			title: 'From',
 			type: 'date',
-			id:'from'
+			id: 'from'
 		}, {
 			title: 'To',
 			type: 'date',
-			id:'to'
+			id: 'to'
 		}];
 		$scope.tabs = [{
 			'title': 'Personal Information',
@@ -38,42 +39,51 @@ angular.module('myprofileApp')
 		}, {
 			'title': 'Programming Skills',
 			'link': '#'
+		}, {
+			'title': 'Import Projects',
+			'link': '#'
+		}, {
+			'title': 'Summary',
+			'link': '#'
+		}, , {
+			'title': 'Preview',
+			'link': '#'
 		}]
+
 		$scope.userInfo['personalInformation'] = userInfo.data.userInfo['personalInformation'] || userInfo.data.userInfo;
 		$scope.userInfo['education'] = userInfo.data.userInfo['education'] || {};
 		$scope.userInfo['experience'] = userInfo.data.userInfo['experience'] || {};
 		$scope.userInfo['certification'] = userInfo.data.userInfo['certification'] || {};
-			userInfo.data.userInfo.education.graduate.from=processDate(userInfo.data.userInfo.education.graduate.from);
-		userInfo.data.userInfo.education.graduate.to=processDate(userInfo.data.userInfo.education.graduate.to);
-		userInfo.data.userInfo.education.undergraduate.to=processDate(userInfo.data.userInfo.education.undergraduate.to);
-		userInfo.data.userInfo.education.undergraduate.from=processDate(userInfo.data.userInfo.education.undergraduate.from);
-		userInfo.data.userInfo.experience.first.from=processDate(userInfo.data.userInfo.experience.first.from);
-		userInfo.data.userInfo.experience.first.to=processDate(userInfo.data.userInfo.experience.first.to);
-		userInfo.data.userInfo.experience.second.to=processDate(userInfo.data.userInfo.experience.second.to);
-		userInfo.data.userInfo.experience.second.from=processDate(userInfo.data.userInfo.experience.second.from);
-			userInfo.data.userInfo.certification.first.from=processDate(userInfo.data.userInfo.certification.first.from);
-		userInfo.data.userInfo.certification.first.to=processDate(userInfo.data.userInfo.certification.first.to);
-		userInfo.data.userInfo.certification.second.to=processDate(userInfo.data.userInfo.certification.second.to);
-		userInfo.data.userInfo.certification.second.from=processDate(userInfo.data.userInfo.certification.second.from);
-
+		$scope.userInfo = processDate($scope.userInfo);
 		//console.log('Hello', new Date(userInfo.data.userInfo.experience.first.from))
-		$scope.updateProfile = function() {
+		$scope.updateProfile = function(updatePage) {
 			updatedUserInfo = $scope.userInfo;
-			//updatedUserInfo.type=updatePage;
-			//console.log('updatePage',updatePage)
+			updatedUserInfo.type = updatePage;
+			console.log('updatePage', updatePage)
 			$http.post('/api/users/updateProfile', {
 				data: updatedUserInfo
 			}).success(function(response) {
+				alert('success');
 				console.log('updatedUserInfo', response);
 				console.log(response.message);
 			}).error(function(error) {
+				alert('failure');
 				console.log(response.error);
 			})
 
 		}
 
-		function processDate(stringFormatDate){
 
-			return new Date(stringFormatDate);
+		// private functions
+		function processDate(userInfo) {
+			_.forEach(userInfo, function(value, key) {
+				_.forEach(value, function(v, k) {
+					_.forEach(v, function(v1, k1) {
+						if (k1 === 'from' || k1 === 'to')
+							userInfo[key][k][k1] = new Date(v1);
+					});
+				});
+			});
+			return userInfo;
 		}
 	});
