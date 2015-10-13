@@ -13,7 +13,7 @@
     <div collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
       <ul class="nav navbar-nav navbar-right" >
         <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
-          <a ng-href="{{item.link}}"><span class="{{item.class}}">
+          <a ng-href="{{item.link}}"><span class="{{item.class}}"></span>
            {{item.title}}</a>
          </li>
          <li  ng-repeat="item in signin"ng-class="{active: isActive(item.link)}" ng-show="currentUser.length===0">

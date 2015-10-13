@@ -1,0 +1,69 @@
+.navbar-top-fixed
+.navbar-inverse {
+  background-color: transparent;
+    margin-bottom: 0px;
+ background-color: transparent;
+    /* border-color: #080808; */
+    margin-bottom: 0px;
+}
+.row {
+    margin-top: 30px;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.education {
+	font-family: cursive;
+	color: rebeccapurple;
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+.sticky {
+    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-left: 39px;
+    padding-right: 40px;
+    margin-right: 10px;
+    font-family: cursive;
+    font-size: 18px;
+    background-color: #FCE17F;
+    -ms-transform: rotate(6deg);
+    -webkit-transform: rotate(6deg);
+    transform: rotate(6deg);
+    width: 350px;
+    height: 300px;
+}
+.backgroundImage {
+	margin-top: 70px;
+	height: 450px;
+	background-size: 100%;
+	background-repeat:no-repeat;
+	 background-image: url('../../assets/images/about.png')
+}
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color:rgba(84, 104, 117, 0.26);
+   margin-bottom: 30px;
+}
+.level{
+    margin-right: 10px;
+    height: 15px;
+    background-color: rgb(41, 102, 132);
+    float: left;
+}
+
+.tableheader{
+	font-size: large;
+}
+
+.level.basic{
+    width: 80px;
+}
+.level.familiar{
+    width: 40px;
+}
+.level.intermediate{
+    width: 120px;
+}
+.level.expert{
+    width: 160px;
+}

@@ -121,6 +121,7 @@ exports.updateProfile = function(req, res) {
 	console.log('input',input);
 	//remove existing properties
 	remove.push(pb.remove('/'+req.body.data.type));
+	//remove.push(pb.remove('/summary'));
 
 	//insert
 	insert.push(pb.insert('/email', 'after',input));

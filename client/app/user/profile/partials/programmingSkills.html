@@ -1,41 +1,32 @@
-<div class="navbar navbar-inverse navbar-fixed-top">
-	<div class="container">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">            
-			<ul class="nav navbar-nav navbar-inverse navbar-right">
-                   <!--  <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li> -->
-                    
-                    <li>
-                    	<a class="page-scroll" href="#home"><span class="glyphicon glyphicon-home"></span> Home </a>
-                    </li>
-                    <li>
-                    	<a class="page-scroll" href="#Statistics"><span class="glyphicon glyphicon-stats"></span> About Me</a>
-                    </li>
-                    <li>
-                    	<a class="page-scroll" href="#portfolio"> <span class="glyphicon glyphicon-gift"></span> Education </a>
-                    </li>
-                    <li>
-                    	<a class="page-scroll" href="#Ending"><span class="glyphicon glyphicon-globe"></span> Experience </a>
-                    </li>
-                    <li>
-                    	<a class="page-scroll" href="/homelessFacts"> <span class="glyphicon glyphicon-zoom-out"></span> Projects </a>
-                    </li>
-                    <li>
-                    	<a class="page-scroll" href="#Volunteer"><span class="glyphicon glyphicon-link"></span> Skills </a>
-                    </li>
-                    <li>
-                    	<a class="page-scroll" href="#donate"><span class="glyphicon glyphicon-usd"></span> Contact </a>
-                    </li>
-                </ul>
+<div class="content-container">
+    <h1 class='text-center'> Personal Information </h1>
+    <div class="jumbotron container-fluid" style="width:800px;background-color:#669999">
+        <form name='personalinfo' ng-controller="RegisterCtrl" class="my-form">
 
+            <div class="form-group">
 
+      
+                    <div>
+                    <label >Level</label>
+                    <select name="degree" class="form-control" ng-model="userInfo.programmingSkills.level">
+                        <!-- not selected / blank option -->
+                        <option value="Expert">Expert</option> <!-- interpolation -->
+                        <option value="Proficient">Proficient</option>
+                         <option value="Working Knowledge">Working Knowledge</option>
+                         <option value="Basics">Basics</option>
+                    </select>
+                </div>
+                    <div>
+                    <label >Skills</label>
+                    <input type="text" class="form-control" name="emailid" id="emailid" placeholder="separeted by comma" ng-model="userInfo.programmingSkills.level"> 
+                <!--    <textarea class="form-control" name="emailid" id="emailid" placeholder="Address" ng-model="userInfo.personalInformation.address" > </textarea> -->
+                </div>
             </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
+            <br>
+            <div class="text-center"> 
+                <button type="submit" style="background-color:#333300" class="btn btn-primary" class="text-center" ng-click='updateProfile("programmingSkills")' ng-disabled='personalinfo.$invalid' >Update</button>
+            </div>
+        </form>
     </div>
-
-
+</div>
+<!-- {{userInfo}} -->

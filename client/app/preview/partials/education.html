@@ -1,0 +1,47 @@
+<div class="container">
+ <div class="row">
+  <div class="col-lg-12 text-center">
+    <h2>Education</h2>
+    <hr class="star-primary">
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-5 col-sm-6">
+
+
+
+    <div class="education">
+      <strong>{{userInfo.education.graduate.degree}} in {{userInfo.education.graduate.major}}</strong>
+      <p>at {{userInfo.education.graduate.schoolName}}</p>
+      <p ng-show="userInfo.education.graduate.specialization">Specialization - <strong>{{userInfo.education.graduate.specialization}}</strong></p>
+      <p ng-show="userInfo.education.graduate.grades>3.5"> Grades - <b>{{userInfo.education.graduate.grades}}</b></p>
+      <p> Attended from <b>{{userInfo.education.graduate.from}}</b> to <b>{{userInfo.education.graduate.to}} </b> </p> 
+
+
+
+    </div>
+    <div class="education">
+      <strong>{{userInfo.education.undergraduate.degree}} in {{userInfo.education.undergraduate.major}}</strong>
+      <p>at {{userInfo.education.undergraduate.schoolName}}</p>
+      <p ng-show="userInfo.education.undergraduate.specialization">Specialization - <strong>{{userInfo.education.undergraduate.specialization}}</strong></p>
+      <p ng-show="userInfo.education.undergraduate.grades>3.5"> Grades - <b>{{userInfo.education.undergraduate.grades}}</b></p>
+      <p> Attended from <b>{{userInfo.education.undergraduate.from}}</b> to <b>{{userInfo.education.undergraduate.to}}</b>  </p> 
+
+
+
+    </div>
+
+  </div>
+  <div class="col-lg-5 col-lg-offset-1 col-sm-6">
+  <img class="img-responsive" src="assets/images/education1.jpg" style="min-height:460px" alt="">
+  </div>
+</div>
+
+</div>
+<!-- 
+
+  {{userInfo.education}} -->
+
+
+
+

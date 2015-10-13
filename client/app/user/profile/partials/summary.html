@@ -1,1 +1,29 @@
-<h1>Summary Page</h1>
+<div class="content-container">
+	<h3 class='text-center'> About Me and Skills </h3>
+	<div class="jumbotron container-fluid" style="width:800px;background-color:#669999">
+		<form name='summary' ng-controller="RegisterCtrl" class="my-form">
+
+			<div class="form-group">
+
+				<div>
+					<label >Professional Headline</label>
+					<input type="text" class="form-control" name="headline" id="headline" placeholder="Professional Headline" ng-model="userInfo.summary.headline" required>
+				</div>
+				<div>
+					<label >About Me</label>
+					<textarea style="height:200px; width:680px" ng-model="userInfo.summary.aboutme" placeholder="Add summary points separated by |" required></textarea>
+				</div>
+				<div>
+					<label >Skills</label>
+					<textarea style="height:200px; width:680px" ng-model="userInfo.summary.programmingSkills" placeholder="Add skills points separated by ," required></textarea>
+				</div>
+				<br>
+				<div class="text-center"> 
+					<button type="submit" style="background-color:#333300" class="btn btn-primary" class="text-center" ng-click='updateProfile("summary")' ng-disabled='summary.$invalid' >Update</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+{{userInfo.summary}}	
+

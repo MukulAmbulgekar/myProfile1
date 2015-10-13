@@ -1,6 +1,6 @@
 <div class="content-container">
 	<h1 class='text-center'> Education </h1>
-	<div class="jumbotron container-fluid" style="width:1000px;background-color:#669999;height:600px" >
+	<div class="jumbotron container-fluid" style="width:1000px;background-color:#669999;height:700px" >
 		<form name='graduate' ng-controller="RegisterCtrl" class="my-form">
 
 			<div class="form-group" style="float:left;width:400px" >
@@ -17,10 +17,14 @@
 						<option value="Bachelor's">Bachelor's</option>
 					</select>
 				</div>
-				<!-- <div>
-					<label >Degree</label>
-					<input type="text" class="form-control" name="degree" id="degree" placeholder="Degree" ng-model="userInfo.education['graduate'].degree" >
-				</div> -->
+				<div>
+					<label >Major</label>
+					<input type="text" class="form-control" name="major" id="major" placeholder="Software Engineering, Electrical Engineering etc." ng-model="userInfo.education['graduate'].major" required>
+				</div>
+				<div>
+					<label >Speciliazation</label>
+					<input type="text" class="form-control" name="specialization" id="specialization" placeholder="specialization" ng-model="userInfo.education['graduate'].specialization" required>
+				</div>
 				<div>
 					<label >Dates Attended</label>
 					<br>From
@@ -57,10 +61,14 @@
 						<option value="Bachelor's">Bachelor's</option>
 					</select>
 				</div>
-				<!-- <div>
-					<label >Degree</label>
-					<input type="text" class="form-control" name="degree" id="degree" placeholder="Degree" ng-model="userInfo.education['undergraduate'].degree" >
-				</div> -->
+					<div>
+					<label >Major</label>
+					<input type="text" class="form-control" name="major" id="major" placeholder="Software Engineering, Electrical Engineering etc." ng-model="userInfo.education['undergraduate'].major" required>
+				</div>
+				<div>
+					<label >Speciliazation</label>
+					<input type="text" class="form-control" name="specialization" id="specialization" placeholder="specialization" ng-model="userInfo.education['undergraduate'].specialization" required>
+				</div>
 				<div>
 					<label >Dates Attended</label>
 					<br>From

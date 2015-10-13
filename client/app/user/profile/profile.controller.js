@@ -43,9 +43,9 @@ angular.module('myprofileApp')
 			'title': 'Import Projects',
 			'link': '#'
 		}, {
-			'title': 'Summary',
+			'title': 'Skills',
 			'link': '#'
-		}, , {
+		}, {
 			'title': 'Preview',
 			'link': '#'
 		}]
@@ -54,6 +54,8 @@ angular.module('myprofileApp')
 		$scope.userInfo['education'] = userInfo.data.userInfo['education'] || {};
 		$scope.userInfo['experience'] = userInfo.data.userInfo['experience'] || {};
 		$scope.userInfo['certification'] = userInfo.data.userInfo['certification'] || {};
+		$scope.userInfo['summary'] = userInfo.data.userInfo['summary'] || {};
+		$scope.userInfo['programmingSkills'] = userInfo.data.userInfo['programmingSkills'] || {};
 		$scope.userInfo = processDate($scope.userInfo);
 		//console.log('Hello', new Date(userInfo.data.userInfo.experience.first.from))
 		$scope.updateProfile = function(updatePage) {
