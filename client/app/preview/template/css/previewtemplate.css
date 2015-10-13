@@ -54,15 +54,15 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: rgba(74, 90, 109, 0.98);;
+    background-color: rgb(77, 93, 111);
 }
 
 hr.star-primary {
-    border-color: #2c3e50;
+    border-color: #1FA4B6;
 }
 
 hr.star-primary:after {
-    color: #2c3e50;
+    color: #1FA4B6;
     background-color: #fff;
 }
 
@@ -74,6 +74,7 @@ header {
     text-align: center;
     color: #B7DDE6;
     background: rgba(74, 90, 109, 0.98);
+    min-height: 850px;
 /*background-image: url('../../../../assets/images/mukul.png');*/
 }
 
@@ -96,13 +97,13 @@ header .intro-text .name {
 }
 
 header .intro-text .skills {
-    font-size: 1.25em;
-    font-weight: 300;
+    font-size: 1.5em;
+    font-weight: 400;
 }
 
 @media(min-width:768px) {
     header .container {
-        padding-top: 200px;
+        padding-top: 100px;
         padding-bottom: 100px;
     }
 
@@ -111,7 +112,7 @@ header .intro-text .skills {
     }
 
     header .intro-text .skills {
-        font-size: 1.25em;
+        font-size: 1.55em;
     }
 }
 
@@ -164,7 +165,8 @@ section {
 
 section h2 {
     margin: 0;
-    font-size: 3em;
+    font-size: 3em; 
+    color: #1FA4B6;
 }
 
 section.success {

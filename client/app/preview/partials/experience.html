@@ -1,15 +1,58 @@
- <div class="container">
-   <div >
-    <div class="row">
-        <div class="col-lg-12 text-center">
-            <h2>Experience</h2>
-            <hr class="star-primary">
-        </div>
-    </div>
-   <div class="row">
-  <div class=" footer-col col-md-4">Mukul</div>
-  <div class=" footer-col col-md-4">Mukul</div>
+
+<div class="container ">
+ <div class="row">
+  <div class="col-lg-12 text-center">
+    <h2>Experience</h2>
+    <hr class="star-primary">
+  </div>
 </div>
-         
-     </div>
+<div class="container sContainer" >
+  <div class="col-lg-4" style="max-width:360px;">
+  <ul style="list-style-type: none;" class=" stickyexp ">
+     <li style="padding-bottom: 20px;" > {{userInfo.experience.first.position}} at 
+       {{userInfo.experience.first.companyName}} ( {{userInfo.experience.first.from}} - Present ) <div class="imgDescription">
+       Responsibilities :-
+       <ul style="list-style-type: square">
+
+         <li style="padding-top: 10px;">{{userInfo.experience.first.responsibilities[0]}} </li>
+         <li style="padding-top: 10px;">{{userInfo.experience.first.responsibilities[1]}} </li>
+       </ul>
+     </div></li>
+
+
+   </ul>
  </div>
+ <div class="col-lg-4" style="max-width:360px;">
+  <ul style="list-style-type: none;" class=" stickyexp ">
+    <li style="padding-bottom: 20px;" > {{userInfo.experience.second.position}} at 
+     {{userInfo.experience.second.companyName}} ( {{userInfo.experience.second.from}} - {{userInfo.experience.second.to}} ) <div class="imgDescription ">
+     Responsibilities :-
+     <ul style="list-style-type: square">
+
+       <li style="padding-top: 10px;">{{userInfo.experience.second.responsibilities[0]}} </li>
+       <li style="padding-top: 10px;">{{userInfo.experience.second.responsibilities[1]}} </li>
+     </ul>
+   </div></li>
+
+
+ </ul>
+</div>
+<div class="col-lg-4" style="max-width:360px;">
+ <ul style="list-style-type: none;" class=" stickyexp ">
+   <li style="padding-bottom: 20px;" > {{userInfo.experience.third.position}} at 
+     {{userInfo.experience.third.companyName}} ( {{userInfo.experience.third.from}} - {{userInfo.experience.third.to}} ) 
+     <div class="imgDescription">
+       Responsibilities :-
+       <ul style="list-style-type: square">
+
+         <li style="padding-top: 10px;">{{userInfo.experience.third.responsibilities[0]}} </li>
+         <li style="padding-top: 10px;">{{userInfo.experience.third.responsibilities[1]}} </li>
+       </ul>
+     </div>
+   </li>
+
+
+ </ul>
+</div>
+</div>
+</div>

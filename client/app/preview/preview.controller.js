@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('myprofileApp')
-	.controller('PreviewCtrl', function($scope, userInfo,$location) {
+	.controller('PreviewCtrl', function($scope, userInfo, $location) {
 		$scope.message = 'Hello';
 		$scope.menuItem = [{
 			'title': 'Home',
@@ -20,6 +20,9 @@ angular.module('myprofileApp')
 			'title': 'Education',
 			'link': '/preview#education'
 		}, {
+			'title': 'Experience',
+			'link': '/preview#experience'
+		}, {
 			'title': 'Connect',
 			'link': '/preview#connect'
 		}];
@@ -30,11 +33,20 @@ angular.module('myprofileApp')
 		$scope.userInfo = processDate($scope.userInfo);
 		$scope.userInfo.summary.description = userInfo.data.userInfo.summary.description.split("|");
 		$scope.userInfo.summary.aboutme = userInfo.data.userInfo.summary.aboutme.split("|");
+		$scope.userInfo.experience.first.responsibilities = $scope.userInfo.experience.first.responsibilities.split("|");
+		$scope.userInfo.experience.second.responsibilities = $scope.userInfo.experience.second.responsibilities.split("|");
+		$scope.userInfo.experience.third.responsibilities = $scope.userInfo.experience.third.responsibilities.split("|");
 		console.log("kk", $scope.userInfo.education.graduate.from.getYear(), 'pp', $scope.userInfo.education.graduate.to.getMonth())
 		$scope.userInfo.education.graduate.from = monthYearFromDate($scope.userInfo.education.graduate.from);
 		$scope.userInfo.education.graduate.to = monthYearFromDate($scope.userInfo.education.graduate.to);
 		$scope.userInfo.education.undergraduate.from = monthYearFromDate($scope.userInfo.education.undergraduate.from);
 		$scope.userInfo.education.undergraduate.to = monthYearFromDate($scope.userInfo.education.undergraduate.to);
+		$scope.userInfo.experience.first.from = monthYearFromDate($scope.userInfo.experience.first.from);
+		$scope.userInfo.experience.first.to = monthYearFromDate($scope.userInfo.experience.first.to);
+		$scope.userInfo.experience.second.from = monthYearFromDate($scope.userInfo.experience.second.from);
+		$scope.userInfo.experience.second.to = monthYearFromDate($scope.userInfo.experience.second.to);
+		$scope.userInfo.experience.third.from = monthYearFromDate($scope.userInfo.experience.third.from);
+		$scope.userInfo.experience.third.to = monthYearFromDate($scope.userInfo.experience.third.to);
 		// private functions
 		function processDate(userInfo) {
 			_.forEach(userInfo, function(value, key) {

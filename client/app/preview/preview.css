@@ -14,9 +14,18 @@
 
 .education {
 	font-family: cursive;
-	color: rebeccapurple;
+	color: rgba(70, 25, 6, 0.9);
     font-size: 30px;
     padding-bottom: 50px;
+}
+
+.experience {
+     font-family: fantasy;
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+     width: auto;
+    height: auto;
 }
 .sticky {
     padding-bottom: 10px;
@@ -30,8 +39,25 @@
     -ms-transform: rotate(6deg);
     -webkit-transform: rotate(6deg);
     transform: rotate(6deg);
-    width: 350px;
-    height: 300px;
+    width: auto;
+    height: auto;
+}
+.stickyexp {
+    padding-bottom: 60px;
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: 10px;
+     font-family: fantasy;
+    font-weight: bold;
+    font-size: 32px;
+    color: black;
+    background-color: #E0DDCE;
+    -ms-transform: rotate(6deg);
+    -webkit-transform: rotate(6deg);
+    transform: rotate(6deg);
+    width: auto;
+    height: auto;
 }
 .backgroundImage {
 	margin-top: 70px;
@@ -66,4 +92,49 @@
 }
 .level.expert{
     width: 160px;
+}
+.sContainer{
+   background-color: #1FA4B6;
+   padding-bottom:80px;
+   padding-top:80px;
+   padding-left:30px;
+   padding-right:30px;
+
+}
+
+
+.imgDescription {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 20px;
+ padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+ background-color: #92603F;
+ color: #fff;
+    width: auto;
+    height: auto;
+  visibility: hidden;
+  opacity: 0;
+  /*background-image: url('../../assets/images/skills.jpeg') */
+}
+
+
+.stickyexp:hover .imgDescription {
+    padding-left: 0px;
+  visibility: visible;
+  opacity: 1;
+
+}
+.col4{
+    padding-left: 20px;
+    padding-top: 20px;
+    border-left: 3px solid #635E5E;
+    padding-bottom: 20px;
+    padding-right: 20px;"
+    max-width:360px
 }
