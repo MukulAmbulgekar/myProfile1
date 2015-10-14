@@ -7,52 +7,42 @@
   </div>
 </div>
 <div class="container sContainer" >
-  <div class="col-lg-4" style="max-width:360px;">
-  <ul style="list-style-type: none;" class=" stickyexp ">
-     <li style="padding-bottom: 20px;" > {{userInfo.experience.first.position}} at 
-       {{userInfo.experience.first.companyName}} ( {{userInfo.experience.first.from}} - Present ) <div class="imgDescription">
-       Responsibilities :-
-       <ul style="list-style-type: square">
+  <div class="col-lg-4 stickyexp" style="max-width:360px;">
+  <span>{{userInfo.experience.first.position}} at 
+       {{userInfo.experience.first.companyName}} ( {{userInfo.experience.first.from}} - Present )</span>
+       <div class="imgDescription">
+       <span class="responsibility"> Responsibilities - </span>
+       <ul style="list-style-type: square;padding-left: 60px">
 
          <li style="padding-top: 10px;">{{userInfo.experience.first.responsibilities[0]}} </li>
          <li style="padding-top: 10px;">{{userInfo.experience.first.responsibilities[1]}} </li>
        </ul>
-     </div></li>
+     </div>
 
-
-   </ul>
  </div>
- <div class="col-lg-4" style="max-width:360px;">
-  <ul style="list-style-type: none;" class=" stickyexp ">
-    <li style="padding-bottom: 20px;" > {{userInfo.experience.second.position}} at 
-     {{userInfo.experience.second.companyName}} ( {{userInfo.experience.second.from}} - {{userInfo.experience.second.to}} ) <div class="imgDescription ">
-     Responsibilities :-
-     <ul style="list-style-type: square">
+ <div class="col-lg-4 stickyexp" style="max-width:360px;">
+ <span>{{userInfo.experience.second.position}} at 
+       {{userInfo.experience.second.companyName}} ( {{userInfo.experience.second.from}} - {{userInfo.experience.second.to}} )</span> <div class="imgDescription ">
+    <span class="responsibility"> Responsibilities - </span>
+     <ul style="list-style-type: square;padding-left: 60px">
 
-       <li style="padding-top: 10px;">{{userInfo.experience.second.responsibilities[0]}} </li>
-       <li style="padding-top: 10px;">{{userInfo.experience.second.responsibilities[1]}} </li>
+       <li style="padding-top: 20px;">{{userInfo.experience.second.responsibilities[0]}} </li>
+       <li style="padding-top: 20px;">{{userInfo.experience.second.responsibilities[1]}} </li>
      </ul>
-   </div></li>
-
-
- </ul>
-</div>
-<div class="col-lg-4" style="max-width:360px;">
- <ul style="list-style-type: none;" class=" stickyexp ">
-   <li style="padding-bottom: 20px;" > {{userInfo.experience.third.position}} at 
-     {{userInfo.experience.third.companyName}} ( {{userInfo.experience.third.from}} - {{userInfo.experience.third.to}} ) 
+   </div>
+   </div>
+<div class="col-lg-4 stickyexp" style="max-width:360px;">
+ <span>{{userInfo.experience.third.position}} at 
+       {{userInfo.experience.third.companyName}} ( {{userInfo.experience.third.from}} - {{userInfo.experience.third.to}} )</span>
      <div class="imgDescription">
-       Responsibilities :-
-       <ul style="list-style-type: square">
+        <span class="responsibility"> Responsibilities - </span>
+       <ul style="list-style-type: square;padding-left: 60px">
 
          <li style="padding-top: 10px;">{{userInfo.experience.third.responsibilities[0]}} </li>
          <li style="padding-top: 10px;">{{userInfo.experience.third.responsibilities[1]}} </li>
        </ul>
      </div>
-   </li>
 
-
- </ul>
 </div>
 </div>
 </div>

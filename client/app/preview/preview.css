@@ -43,21 +43,20 @@
     height: auto;
 }
 .stickyexp {
-    padding-bottom: 60px;
-    padding-top: 60px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-right: 10px;
+  padding-top: 50px;
+    padding-bottom: 50px;
+      padding-right: 20px;
+        padding-left: 50px;
+margin-right: 10px;
      font-family: fantasy;
     font-weight: bold;
     font-size: 32px;
     color: black;
     background-color: #E0DDCE;
-    -ms-transform: rotate(6deg);
-    -webkit-transform: rotate(6deg);
-    transform: rotate(6deg);
+   background-position: 50%;
+    border-radius: 50%;
     width: auto;
-    height: auto;
+    min-height: 315px;
 }
 .backgroundImage {
 	margin-top: 70px;
@@ -95,10 +94,12 @@
 }
 .sContainer{
    background-color: #1FA4B6;
-   padding-bottom:80px;
-   padding-top:80px;
+   padding-bottom:90px;
+   padding-top:90px;
    padding-left:30px;
    padding-right:30px;
+   min-height: 450px;
+
 
 }
 
@@ -110,16 +111,18 @@
   left: 0;
   right: 0;
   font-size: 20px;
- padding-top: 20px;
+      padding-bottom: 10px;
+    padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 20px;
+  
  background-color: #92603F;
  color: #fff;
-    width: auto;
-    height: auto;
+   background-position: 50%;
+    border-radius: 50%;
   visibility: hidden;
   opacity: 0;
+   display: block;
   /*background-image: url('../../assets/images/skills.jpeg') */
 }
 
@@ -134,7 +137,11 @@
     padding-left: 20px;
     padding-top: 20px;
     border-left: 3px solid #635E5E;
-    padding-bottom: 20px;
-    padding-right: 20px;"
+  
     max-width:360px
+}
+
+.responsibility{
+  padding-left:90px;
+  font-size:22px;
 }

@@ -5,7 +5,17 @@
                     <div class="intro-text">
                         <span class="name">{{userInfo.personalInformation["first name"]}} {{userInfo.personalInformation["last name"]}}</span>
                         <span class="skills"> {{userInfo.summary.headline}} </span>
-                        <hr class="star-light">
+                        <ul class="list-inline">
+                            <li>
+                                <a href="{{userInfo.personalInformation.giturl}}" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="{{userInfo.personalInformation.linkedinurl}}" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="{{userInfo.personalInformation.twitterurl}}" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                        </ul>
                        <!--  <h3>Summary</h3>
                         <ul ng-repeat="item in userInfo.summary.description track by $index">
                         <li>{{item}}</li>
