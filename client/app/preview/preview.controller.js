@@ -59,6 +59,7 @@ var items;
 		var monthNames = ["January", "February", "March", "April", "May", "June",
 			"July", "August", "September", "October", "November", "December"
 		];
+
 		$scope.userInfo = userInfo.data.userInfo;
 		$scope.userInfo = processDate($scope.userInfo);
 		$scope.userInfo.summary.description = userInfo.data.userInfo.summary.description.split("|");
@@ -67,6 +68,7 @@ var items;
 		$scope.userInfo.experience.second.responsibilities = $scope.userInfo.experience.second.responsibilities.split("|");
 		$scope.userInfo.experience.third.responsibilities = $scope.userInfo.experience.third.responsibilities.split("|");
 		console.log("kk", $scope.userInfo.education.graduate.from.getYear(), 'pp', $scope.userInfo.education.graduate.to.getMonth())
+		console.log("hhh");
 		$scope.userInfo.education.graduate.from = monthYearFromDate($scope.userInfo.education.graduate.from);
 		$scope.userInfo.education.graduate.to = monthYearFromDate($scope.userInfo.education.graduate.to);
 		$scope.userInfo.education.undergraduate.from = monthYearFromDate($scope.userInfo.education.undergraduate.from);
@@ -90,7 +92,7 @@ var items;
 			return userInfo;
 		}
 		$scope.isActive = function(route) {
-			return route === $location.path();
+			return route === $location.url();
 		};
 
 		function monthYearFromDate(date) {

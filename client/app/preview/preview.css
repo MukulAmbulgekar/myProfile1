@@ -39,7 +39,7 @@
   background-color: #FCE17F;
   -ms-transform: rotate(6deg);
   -webkit-transform: rotate(6deg);
-  transform: rotate(-5deg);
+  transform: rotate(-4deg);
   width: auto;
   height: auto;
   min-height: 440px;
@@ -56,9 +56,9 @@
   font-family: monospace;
   font-size: 19px;
   background-color: #DDDACB;
-/*  -ms-transform: rotate(6deg);
+  -ms-transform: rotate(6deg);
   -webkit-transform: rotate(6deg);
-  transform: rotate(-4deg);*/
+  transform: rotate(5deg);
   min-height: 440px;
   max-width:340px;
 
@@ -123,12 +123,7 @@
  padding-left:30px;
  padding-right:30px;
  min-height: 360px;
-
-
-
 }
-
-
 .imgDescription {
   position: absolute;
   top: 0;
@@ -168,4 +163,8 @@
 
 .responsibility{
  font-size: bold;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: #296684;
 }
