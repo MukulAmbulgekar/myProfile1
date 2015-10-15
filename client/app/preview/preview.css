@@ -1,79 +1,103 @@
 .navbar-top-fixed
 .navbar-inverse {
   background-color: transparent;
-    margin-bottom: 0px;
- background-color: transparent;
-    /* border-color: #080808; */
-    margin-bottom: 0px;
+  margin-bottom: 0px;
+  background-color: transparent;
+  /* border-color: #080808; */
+  margin-bottom: 0px;
 }
 .row {
-    margin-top: 30px;
-    margin-right: -15px;
-    margin-left: -15px;
+  margin-top: 30px;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .education {
 	font-family: cursive;
 	color: rgba(70, 25, 6, 0.9);
-    font-size: 30px;
-    padding-bottom: 50px;
+  font-size: 30px;
+  padding-bottom: 50px;
 }
 
 .experience {
-     font-family: fantasy;
-    font-weight: bold;
-    font-size: 40px;
-    color: black;
-     width: auto;
-    height: auto;
+ font-family: fantasy;
+ font-weight: bold;
+ font-size: 40px;
+ color: black;
+ width: auto;
+ height: auto;
 }
 .sticky {
-    padding-bottom: 10px;
-    padding-top: 20px;
-    padding-left: 39px;
-    padding-right: 40px;
-    margin-right: 10px;
-    font-family: cursive;
-    font-size: 18px;
-    background-color: #FCE17F;
-    -ms-transform: rotate(6deg);
-    -webkit-transform: rotate(6deg);
-    transform: rotate(6deg);
-    width: auto;
-    height: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+   margin-left: 15px;
+  margin-right: 15px;
+  font-family: cursive;
+  font-size: 20px;
+  background-color: #FCE17F;
+  -ms-transform: rotate(6deg);
+  -webkit-transform: rotate(6deg);
+  transform: rotate(-5deg);
+  width: auto;
+  height: auto;
+  min-height: 440px;
+  max-width:340px;
+
 }
 .stickyexp {
-  padding-top: 50px;
-    padding-bottom: 50px;
-      padding-right: 20px;
-        padding-left: 50px;
-margin-right: 10px;
-     font-family: fantasy;
-    font-weight: bold;
-    font-size: 32px;
-    color: black;
-    background-color: #E0DDCE;
-   background-position: 50%;
-    border-radius: 50%;
-    width: auto;
-    min-height: 315px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-family: monospace;
+  font-size: 19px;
+  background-color: #DDDACB;
+/*  -ms-transform: rotate(6deg);
+  -webkit-transform: rotate(6deg);
+  transform: rotate(-4deg);*/
+  min-height: 440px;
+  max-width:340px;
+
 }
+/*.stickyexp {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 20px;
+  padding-left: 50px;
+  margin-right: 10px;
+  font-family: fantasy;
+  font-weight: bold;
+  font-size: 32px;
+  color: black;
+  background-color: #E0DDCE;
+  background-position: 50%;
+  border-radius: 50%;
+  width: auto;
+  height: 350px;
+  display: block;
+
+
+}*/
 .backgroundImage {
 	margin-top: 70px;
 	height: 450px;
 	background-size: 100%;
 	background-repeat:no-repeat;
-	 background-image: url('../../assets/images/about.png')
+  background-image: url('../../assets/images/about.png')
 }
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
-   background-color:rgba(84, 104, 117, 0.26);
-   margin-bottom: 30px;
+ background-color:rgba(84, 104, 117, 0.26);
+ margin-bottom: 30px;
 }
 .level{
-    margin-right: 10px;
-    height: 15px;
-    background-color: rgb(41, 102, 132);
-    float: left;
+  margin-right: 10px;
+  height: 15px;
+  background-color: rgb(41, 102, 132);
+  float: left;
 }
 
 .tableheader{
@@ -81,24 +105,25 @@ margin-right: 10px;
 }
 
 .level.basic{
-    width: 80px;
+  width: 80px;
 }
 .level.familiar{
-    width: 40px;
+  width: 40px;
 }
 .level.intermediate{
-    width: 120px;
+  width: 120px;
 }
 .level.expert{
-    width: 160px;
+  width: 160px;
 }
 .sContainer{
-   background-color: #1FA4B6;
-   padding-bottom:90px;
-   padding-top:90px;
-   padding-left:30px;
-   padding-right:30px;
-   min-height: 450px;
+ background-color: #1FA4B6;
+ padding-bottom:50px;
+ padding-top:50px;
+ padding-left:30px;
+ padding-right:30px;
+ min-height: 360px;
+
 
 
 }
@@ -110,38 +135,37 @@ margin-right: 10px;
   bottom: 0;
   left: 0;
   right: 0;
-  font-size: 20px;
-      padding-bottom: 10px;
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-  
- background-color: #92603F;
- color: #fff;
-   background-position: 50%;
-    border-radius: 50%;
+  font-size: 19px;
+  padding-bottom:10px;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #FCE17F;
+  /*color: #fff;*/
+ /* background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;*/
+
   visibility: hidden;
   opacity: 0;
-   display: block;
   /*background-image: url('../../assets/images/skills.jpeg') */
 }
 
 
 .stickyexp:hover .imgDescription {
-    padding-left: 0px;
+  padding-left: 0px;
   visibility: visible;
   opacity: 1;
 
 }
 .col4{
-    padding-left: 20px;
-    padding-top: 20px;
-    border-left: 3px solid #635E5E;
+  padding-left: 20px;
+  padding-top: 20px;
+  border-left: 3px solid #635E5E;
   
-    max-width:360px
+  max-width:360px
 }
 
 .responsibility{
-  padding-left:90px;
-  font-size:22px;
+ font-size: bold;
 }
