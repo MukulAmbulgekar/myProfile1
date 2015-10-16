@@ -55,7 +55,7 @@
   margin-right: 15px;
   font-family: monospace;
   font-size: 19px;
-  background-color: #CDD6DE;
+  background-color: #D2D8DB;
  /* -ms-transform: rotate(6deg);
   -webkit-transform: rotate(6deg);
   transform: rotate(5deg);*/
@@ -135,8 +135,8 @@
   padding-top: 10px;
   padding-left: 30px;
   padding-right: 30px;
-  background-color: #A3AB53;
-  color: #fff;
+  background-color: #C1DEF9;
+ /* color: #fff;*/
  /* background-repeat: no-repeat;
   background-position: 50%;
   border-radius: 50%;*/
@@ -190,11 +190,11 @@ font-weight:lighter;
 .certificate{
   font-family: monospace;
   color: #1FA4B6;
-  font-size: 20px;
+  font-size: 50px;
 }
 
-.certificate a{
-   color: #838E0D;
+.certificate a {
+color: #838E0D;
 font-size: 20px;
 font-weight:lighter;
 }

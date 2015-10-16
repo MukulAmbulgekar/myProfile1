@@ -53,8 +53,8 @@ var items;
 			'title': 'Experience',
 			'link': '/preview#experience'
 		}, {
-			'title': 'Certifications',
-			'link': '/preview#certification'
+			'title': 'Courses',
+			'link': '/preview#courses'
 		}, {
 			'title': 'Connect',
 			'link': '/preview#connect'
