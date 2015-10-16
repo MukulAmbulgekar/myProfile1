@@ -6,11 +6,11 @@ angular.module('myprofileApp')
 var items;
   $scope.animationsEnabled = true;
 
-  $scope.open = function (size) {
+  $scope.open = function (name,size) {
 
     var modalInstance = $modal.open({
       animation: $scope.animationsEnabled,
-      templateUrl: 'project1.html',
+      templateUrl: name+'.html',
       controller: 'ModalInstanceCtrl',
       size: size,
       resolve: {
@@ -52,6 +52,9 @@ var items;
 		}, {
 			'title': 'Experience',
 			'link': '/preview#experience'
+		}, {
+			'title': 'Certifications',
+			'link': '/preview#certification'
 		}, {
 			'title': 'Connect',
 			'link': '/preview#connect'

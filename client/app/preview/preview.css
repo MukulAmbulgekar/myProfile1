@@ -15,7 +15,7 @@
 .education {
 	font-family: cursive;
 	color: rgba(70, 25, 6, 0.9);
-  font-size: 30px;
+  font-size: 35px;
   padding-bottom: 50px;
 }
 
@@ -55,10 +55,10 @@
   margin-right: 15px;
   font-family: monospace;
   font-size: 19px;
-  background-color: #DDDACB;
-  -ms-transform: rotate(6deg);
+  background-color: #CDD6DE;
+ /* -ms-transform: rotate(6deg);
   -webkit-transform: rotate(6deg);
-  transform: rotate(5deg);
+  transform: rotate(5deg);*/
   min-height: 440px;
   max-width:340px;
 
@@ -135,8 +135,8 @@
   padding-top: 10px;
   padding-left: 30px;
   padding-right: 30px;
-  background-color: #FCE17F;
-  /*color: #fff;*/
+  background-color: #A3AB53;
+  color: #fff;
  /* background-repeat: no-repeat;
   background-position: 50%;
   border-radius: 50%;*/
@@ -167,4 +167,34 @@
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
     color: #fff;
     background-color: #296684;
+}
+
+.title-modal{
+color: #838E0D;
+font-size: 25px;
+font-weight:bold ;
+}
+
+.project {
+  font-family: monospace;
+  color: rgba(21, 97, 138, 0.9);
+  font-size: 20px;
+}
+
+.project a{
+   color: #838E0D;
+font-size: 20px;
+font-weight:lighter;
+}
+
+.certificate{
+  font-family: monospace;
+  color: #1FA4B6;
+  font-size: 20px;
+}
+
+.certificate a{
+   color: #838E0D;
+font-size: 20px;
+font-weight:lighter;
 }
