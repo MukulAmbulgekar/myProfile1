@@ -1,14 +1,42 @@
-<div ng-include="'components/navbar/navbarPreview.html'"></div>
-<br><br><br>
-<div class="container" >
-	
- <img class="img-circle" src="assets/images/mukul.png" alt="Profile pic" >
+<div ng-include="'app/preview/partials/header1.html'"></div>
 
 
-</div>
+    <!-- Header -->
+    <header id="home">
+      <div ng-include="'app/preview/partials/header.html'"></div>
+    </header>
 
-<div ng-include="'components/navbar/footer.html'"></div>
+     <!-- About Section -->
+    <section  id="summary">
+       <div ng-include="'app/preview/partials/aboutme.html'"></div>
+    </section>
+     <!-- Skills Section -->
+    <section  id="skills">
+       <div ng-include="'app/preview/partials/skills.html'"></div>
+    </section>
+        <!-- Projects Section -->
+    <section id="projects">
+        <div ng-include="'app/preview/partials/projects.html'"></div>
+    </section>
+    <!-- Education Section -->
+    <section id="education">
+        <div ng-include="'app/preview/partials/education.html'"></div>
+    </section>
+       <!-- Experience Section -->
+    <section id="experience">
+        <div ng-include="'app/preview/partials/experience.html'" ></div>
+    </section>
+    <section id="courses">
+        <div ng-include="'app/preview/partials/certifications.html'" ></div>
+    </section>
+    <!-- Contact Section -->
+ <!--    <section id="contact" >
+       <div ng-include="'app/preview/partials/contact1.html'"></div>
+    </section> -->
 
+    <!-- Footer -->
+    <section id="connect">
+    <div ng-include="'app/preview/partials/contact.html'"></div>
+ </section>
 
-
-   
+    <div ng-include="'app/preview/partials/footer.html'"></div>

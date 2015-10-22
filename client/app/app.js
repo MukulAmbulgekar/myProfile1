@@ -12,6 +12,5 @@ angular.module('myprofileApp', [
       .otherwise({
         redirectTo: '/'
       });
-
     $locationProvider.html5Mode(true);
   });
