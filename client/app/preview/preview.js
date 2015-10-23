@@ -6,10 +6,10 @@ angular.module('myprofileApp')
       .when('/preview', {
         templateUrl: 'app/preview/preview.html',
         controller: 'PreviewCtrl',
-        resolve: {
+        /*resolve: {
           userInfo: ['$http', '$window', function($http, $window) {
-            return $http.get('/api/users/userInfo/' + $window.localStorage.loggedInUser)
+            return $http.get('/api/users/userInfo/mukul12')
           }]
-        }
+        }*/
       })
   });
