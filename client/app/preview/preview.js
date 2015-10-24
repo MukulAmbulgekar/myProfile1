@@ -3,7 +3,7 @@
 angular.module('myprofileApp')
   .config(function($routeProvider) {
     $routeProvider
-      .when('/preview', {
+      .when('/', {
         templateUrl: 'app/preview/preview.html',
         controller: 'PreviewCtrl',
         /*resolve: {
